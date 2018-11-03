@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <title>Итог</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="itog.css">
+    </head>
+    <body>
+        <div id="b2">
+        <h1>Итог работ по html и CSS</h1>
+        <h4>HTML-стандартизированный язык разметки документов во Всемирной паутине</h4>
+        </div>
+        <div id="b3">
+        <ol>
+        <li><a href="lab1.html">Лабораторная №1</a></li>
+        <li><a href="lab2.html">Лабораторная №2</a></li>
+        <li><a href="lab3.html">Лабораторная №3</a></li>
+        <li><a href="lab4.html">Лабораторная №4</a></li>
+        <li><a href="modul.html">Модульная работа</a></li>
+        <li><a href="flash.html">Работа с Flash</a></li>
+        <li><a href="labjava.html">Лаборатораторная java script №2</a></li>
+ 	<li><a href="java31.html">Лаборатораторная javascript №3.1</a></li>
+        <li><a href="primer.html">Пример с книжки "JavaScript для детей"</a></li>
+        <li><a href="java32.html">Лаборатораторная javascript №3.2</a></li>
+	<li><a href="java33.html">Лаборатораторная javascript №3.3</a></li>
+ 	<li><a href="java34.html">Лаборатораторная javascript №3.4</a></li>
+        <li><a href="calc.html">Калькулятор</a></li>
+        <li><a href="java4.html">Лаборатораторная javascript №4</a></li>
+        </ol> 
+        </div>
+<div id="t1">
+<h1>Виселица</h1>
+<p><img src="pr1.png" alt="Пример1" width=1000px height=600px></p>
+<p><img src="pr2.png" alt="Пример2" width=1000px height=600px></p>
+<script>
+var words= [
+"математика",
+"информатика",
+"физика",
+"астрономия",
+];
+var word = words[Math.floor(Math.random() * words.length)];
+var answerArray= [];
+for(var i = 0; i<word.length;i++){
+answerArray[i] = "_";
+}
+var remainingLetters = word.length;
+while (remainingLetters > 0) {
+alert(answerArray.join(" "));
+var guess = prompt("Угадайте букву.");
+if (guess === null) {
+break;
+} else if (guess.length !== 1) {
+alert ( "Введите одиночную букву");
+} else {
+for(var j=0; j < word.length; j++) {
+if(word[j]===guess) {
+answerArray[j] = guess; 
+remainingLetters--;
+}
+}
+}
+}
+alert(answerArray.join(" "));
+alert("Отлично, было загадано слово " + word);
+</script>
+  </div>
+        <div id="b5">
+        &copy;Кошевко Мария Валериевна, 2018г.
+        </div>
+</body>
+</html>
+</html>
